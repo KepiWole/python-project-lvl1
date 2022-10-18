@@ -1,0 +1,7 @@
+greeting = "Welcome to the Brain Games!"
+def greet(greeting):
+  print(greeting)
+def main():
+  greet(greeting)
+if __name__ == '__main__':
+  main()
