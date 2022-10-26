@@ -2,8 +2,8 @@
 from random import randint
 from brain_games.cli import *
 from brain_games.scripts.brain_games import *
+greet(greeting)
 def rand():
-  greet(greeting)
   print('Answer "yes" if the number is even, otherwise answer "no".')
   good_result = 0
   while True:
