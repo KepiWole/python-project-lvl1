@@ -6,12 +6,11 @@ greeting = "Welcome to the Brain Games!"
 
 
 def greet(greeting):
-	print(greeting)
-	welcome_user()
+	return print(greeting)
 
 
 def main():
-	greet(greeting)
+	return greet(greeting)
 
 
 if __name__ == '__main__':
