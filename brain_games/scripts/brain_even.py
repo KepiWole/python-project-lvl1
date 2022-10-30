@@ -29,4 +29,9 @@ def rand():
             return print(f"Let's try again, {name}!")
 
 
-rand()
+def main():
+    rand()
+
+
+if __name__ == '__main__':
+    main()
