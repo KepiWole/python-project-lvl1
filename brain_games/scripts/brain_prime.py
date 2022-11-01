@@ -30,7 +30,9 @@ def prime():
                 text2 += 'yes'
             elif result >= 10:
                 text2 += 'no'
-            return print(f'\'{text}\' is wrong answer ;(. Correct answer was \'{text2}\'.\nLet\'s try again, {name}')
+            return print(
+                f'\'{text}\' is wrong answer ;(. Correct answer was'
+                f'\'{text2}\'.\nLet\'s try again, {name}')
 
 
 def main():

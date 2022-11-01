@@ -22,7 +22,9 @@ def rand_gcd():
             if good_result == 3:
                 return print(f'Congratulations, {name}!')
         elif text != math.gcd(num1, num2):
-            return print(f'\'{text}\' is wrong answer ;(. Correct answer was \'{math.gcd(num1, num2)}\'\nLet\'s try again, {name}!')
+            return print(
+                f'\'{text}\' is wrong answer ;(. Correct answer was'
+                f'\'{math.gcd(num1, num2)}\'\nLet\'s try again, {name}!')
 
 
 def main():

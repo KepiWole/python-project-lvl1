@@ -25,7 +25,9 @@ def progression():
             if good_result == 3:
                 return print(f'Congratulations, {name}!')
         elif text != answer:
-            return print(f'\'{text}\' is wrong answer ;(. Correct answer was \'{answer}\'.\nLet\'s try again, {name}!')
+            return print(
+                f'\'{text}\' is wrong answer ;(. Correct answer was \'{answer}\'.'
+                f'\nLet\'s try again, {name}!')
 
 
 def main():

@@ -39,7 +39,9 @@ def rand_calc():
         if good_result == 3:
             return print(f'Congratulations, {name}!')
         elif result != int(text):
-            return print(f'\"{text}\" is wrong answer ;(. Correct answer was "{result}"\nLet\'s try again, {name}')
+            return print(
+                f'\"{text}\" is wrong answer ;(. Correct answer was "{result}"'
+                f'\nLet\'s try again, {name}')
 
 
 def main():
