@@ -1,8 +1,24 @@
 from brain_games.cli import welcome_user
 from brain_games.scripts.brain_games import main
-from brain_games.scripts.brain_arithmetic import arithmetic
+from random import randint
+import random
+
 
 main()
+
+
+def arithmetic():
+    arithmetic = ['-', '+', '*']
+    num1 = randint(1, 10)
+    num2 = randint(1, 10)
+    point = random.choice(arithmetic)
+    if point == '-':
+        result = num1 - num2
+    elif point == '*':
+        result = num1 * num2
+    elif point == '+':
+        result = num1 + num2
+    return [result, num1, num2, point]
 
 
 def rand_calc():
