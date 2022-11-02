@@ -14,12 +14,8 @@ def prime():
         result = randint(1, 20)
         print(f'Question: {result}')
         text = input('Your answer: ').lower()
-        if result < 10 and text == 'yes':
-            good_result += 1
-            print('Correct!')
-            if good_result == 3:
-                return print(f'Congratulations, {name}')
-        elif result > 10 and text == 'no':
+        if (result < 10 and text == 'yes' or
+                result > 10 and text == 'no'):
             good_result += 1
             print('Correct!')
             if good_result == 3:
