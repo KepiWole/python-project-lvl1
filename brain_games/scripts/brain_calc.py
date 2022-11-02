@@ -36,7 +36,7 @@ def rand_calc():
             print('Correct!')
             if good_result == 3:
                 return print(f'Congratulations, {name}!')
-        elif str(result) != str(text):
+        else:
             return print(
                 f'\"{text}\" is wrong answer ;(. Correct answer was "{result}"'
                 f'\nLet\'s try again, {name}')
