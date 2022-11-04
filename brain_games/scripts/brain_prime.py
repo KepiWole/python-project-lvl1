@@ -19,8 +19,8 @@ def prime():
     good_result = 0
     while True:
         text, result = even()
-        if (result < 10 and text == 'yes' or
-                result > 10 and text == 'no'):
+        if (result < 10 and text == 'yes'
+                or result > 10 and text == 'no'):
             good_result += 1
             print('Correct!')
             if good_result == 3:

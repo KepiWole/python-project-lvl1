@@ -15,8 +15,8 @@ def rand():
         result = randint(1, 10)
         print(f'Question: {result}')
         text = input('Your answer: ').lower()
-        if (result % 2 == 0 and
-                text == 'yes' or result % 2 != 0 and text == 'no'):
+        if (result % 2 == 0
+                and text == 'yes' or result % 2 != 0 and text == 'no'):
             good_result += 1
             print('Correct!')
             if good_result == 3:
