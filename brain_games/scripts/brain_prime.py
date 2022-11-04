@@ -6,14 +6,19 @@ from brain_games.scripts.brain_games import main
 main()
 
 
+def even():
+    result = randint(1, 10)
+    print(f'Question: {result}')
+    text = input('Your answer: ').lower()
+    return text, result
+
+
 def prime():
     name = welcome_user()[1]
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     good_result = 0
     while True:
-        result = randint(1, 20)
-        print(f'Question: {result}')
-        text = input('Your answer: ').lower()
+        text, result = even()
         if (result < 10 and text == 'yes' or
                 result > 10 and text == 'no'):
             good_result += 1
