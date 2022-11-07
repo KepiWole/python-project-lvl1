@@ -36,7 +36,7 @@ def rand_calc():
         else:
             return print(
                 f'\"{text}\" is wrong answer ;(. Correct answer was "{result}"'
-                f'\nLet\'s try again, {name}')
+                f'\nLet\'s try again, {name}!')
 
 
 def main():

@@ -30,7 +30,7 @@ def prime():
                 text2 += 'no'
             return print(
                 f'\'{text}\' is wrong answer ;(. Correct answer was'
-                f'\'{text2}\'.\nLet\'s try again, {name}')
+                f'\'{text2}\'.\nLet\'s try again, {name}!')
 
 
 def main():
