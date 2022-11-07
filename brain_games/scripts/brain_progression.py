@@ -11,7 +11,7 @@ def progression():
         stop = randint(20, 50)
         step = randint(1, 5)
         result = list(range(randint(0, 9), stop, step))[0: 5]
-        answer = str(result[randint(0, 4)])
+        answer = str(result[randint(0, len(result) - 1)])
         result = " ".join(map(str, (result)))
         printer = result.replace(answer, "..", 1)
         print(f'Question: {printer}')
