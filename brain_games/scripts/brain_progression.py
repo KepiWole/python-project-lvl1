@@ -1,34 +1,10 @@
-from random import randint
-from brain_games.cli import welcome_user
-
-
-def progression():
-    name = welcome_user()
-    print('What number is missing in the progression?')
-    good_result = 0
-    while True:
-        stop = randint(50, 100)
-        step = randint(1, 5)
-        result = list(range(randint(0, 9), stop, step))[: 5]
-        answer = str(result[randint(0, len(result) - 1)])
-        result = " ".join(map(str, (result)))
-        printer = result.replace(answer, "..", 1)
-        print(f'Question: {printer}')
-        text = input('Your answer: ')
-        if text == answer:
-            good_result += 1
-            print('Correct!')
-            if good_result == 3:
-                return print(f'Congratulations, {name}!')
-        elif text != answer:
-            return print(
-                f'\'{text}\' is wrong answer ;(. Correct answer was'
-                f'\'{answer}\'.'
-                f'\nLet\'s try again, {name}!')
+#!/usr/bin/env python3
+from brain_games.main_code_bg.first_words import first_word
+from brain_games.main_code_bg import progression
 
 
 def main():
-    progression()
+    first_word(progression)
 
 
 if __name__ == '__main__':

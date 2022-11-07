@@ -7,10 +7,12 @@ def rounds(question, good_answer):
     answer = prompt.string('Your answer: ')
     if str(good_answer) == str(answer):
         print('Correct!')
-        return  True
+        return True
     else:
         print(
-            f'\"{answer}\" is wrong answer ;(. Correct answer was "{good_answer}".')
+            f'\"{answer}\" is wrong answer ;(.'
+            f' Correct answer was "{good_answer}".')
+        return False
 
 
 def first_word(game):
@@ -19,9 +21,9 @@ def first_word(game):
     result = 0
     while result != 3:
         question, good_answer = game.game_math()
-        if rounds(question, good_answer) == True:
+        if rounds(question, good_answer):
             result += 1
         else:
-           return print(f"Let's try again, {name}!")
+            return print(f"Let's try again, {name}!")
     else:
         return print(f'Congratulations, {name}!')

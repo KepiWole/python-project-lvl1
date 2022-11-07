@@ -3,7 +3,6 @@ from brain_games.main_code_bg.first_words import first_word
 from brain_games.main_code_bg import calc
 
 
-
 def main():
     first_word(calc)
 

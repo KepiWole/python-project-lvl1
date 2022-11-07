@@ -1,35 +1,10 @@
 #!/usr/bin/env python3
-from random import randint
-from brain_games.cli import welcome_user
-
-
-def rand():
-    name = welcome_user()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    good_result = 0
-    while True:
-        result = randint(1, 10)
-        print(f'Question: {result}')
-        text = input('Your answer: ').lower()
-        if (result % 2 == 0
-                and text == 'yes' or result % 2 != 0 and text == 'no'):
-            good_result += 1
-            print('Correct!')
-            if good_result == 3:
-                return print(f'Congratulations, {name}!')
-        else:
-            text2 = ''
-            if result % 2 == 0:
-                text2 += 'yes'
-            elif result % 2 != 0:
-                text2 += 'no'
-            return print(
-                f'\'{text}\' is wrong answer ;(. Correct answer was'
-                f'\'{text2}\'.\nLet\'s try again, {name}!')
+from brain_games.main_code_bg.first_words import first_word
+from brain_games.main_code_bg import even
 
 
 def main():
-    rand()
+    first_word(even)
 
 
 if __name__ == '__main__':

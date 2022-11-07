@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-game_saying = 'What is the result of the expression?'
 from random import randint
 import random
+game_saying = 'What is the result of the expression?'
 
 
 def game_math():
@@ -17,4 +17,3 @@ def game_math():
     elif point == '+':
         good_answer = num1 + num2
     return question, good_answer
-
