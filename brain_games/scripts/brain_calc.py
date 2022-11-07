@@ -1,47 +1,12 @@
-from brain_games.cli import welcome_user
-from random import randint
-import random
+#!/usr/bin/env python3
+from brain_games.main_code_bg.first_words import first_word
+from brain_games.main_code_bg import calc
 
-
-def arithmetic():
-    arithmetic = ['-', '+', '*']
-    num1 = randint(1, 10)
-    num2 = randint(1, 10)
-    point = random.choice(arithmetic)
-    if point == '-':
-        result = num1 - num2
-    elif point == '*':
-        result = num1 * num2
-    elif point == '+':
-        result = num1 + num2
-    return [result, num1, num2, point]
-
-
-def rand_calc():
-    print('Welcome to the Brain Games!')
-    name = welcome_user()
-    print('What is the result of the expression?')
-    good_result = 0
-    i = 0
-    while i <= 3:
-        result, num1, num2, point = arithmetic()
-        i += 1
-        print(f'Question: {num1} {point} {num2}')
-        text = input('Your answer: ')
-        if str(result) == str(text):
-            good_result += 1
-            print('Correct!')
-            if good_result == 3:
-                return print(f'Congratulations, {name}!')
-        else:
-            return print(
-                f'\"{text}\" is wrong answer ;(. Correct answer was "{result}"'
-                f'\nLet\'s try again, {name}!')
 
 
 def main():
-    rand_calc()
+    first_word(calc)
 
 
 if __name__ == '__main__':
-    rand_calc()
+    main()

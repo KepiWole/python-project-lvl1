@@ -3,7 +3,6 @@ from brain_games.cli import welcome_user
 
 
 def progression():
-    print("Welcome to the Brain Games!")
     name = welcome_user()
     print('What number is missing in the progression?')
     good_result = 0

@@ -17,7 +17,6 @@ def even():
 
 
 def prime():
-    print("Welcome to the Brain Games!")
     name = welcome_user()
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     good_result = 0

@@ -4,7 +4,6 @@ from brain_games.cli import welcome_user
 
 
 def rand():
-    print("Welcome to the Brain Games!")
     name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     good_result = 0
