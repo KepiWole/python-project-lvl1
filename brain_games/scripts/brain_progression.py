@@ -8,9 +8,9 @@ def progression():
     print('What number is missing in the progression?')
     good_result = 0
     while True:
-        stop = randint(20, 50)
+        stop = randint(50, 100)
         step = randint(1, 5)
-        result = list(range(randint(0, 9), stop, step))[0: 5]
+        result = list(range(randint(0, 9), stop, step))[: 5]
         answer = str(result[randint(0, len(result) - 1)])
         result = " ".join(map(str, (result)))
         printer = result.replace(answer, "..", 1)
