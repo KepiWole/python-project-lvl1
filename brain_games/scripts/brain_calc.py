@@ -26,7 +26,7 @@ def rand_calc():
     while i <= 3:
         result, num1, num2, point = arithmetic()
         i += 1
-        print(f'Question: {num1}{point}{num2}')
+        print(f'Question: {num1} {point} {num2}')
         text = input('Your answer: ')
         if str(result) == str(text):
             good_result += 1
