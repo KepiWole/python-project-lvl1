@@ -28,7 +28,7 @@ def prime():
             good_result += 1
             print('Correct!')
             if good_result == 3:
-                return print(f'Congratulations, {name}')
+                return print(f'Congratulations, {name}!')
         else:
             text2 = ''
             if result == prime:
