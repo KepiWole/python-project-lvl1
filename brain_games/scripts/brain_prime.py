@@ -1,9 +1,5 @@
 from random import randint
 from brain_games.cli import welcome_user
-from brain_games.scripts.brain_games import main
-
-
-main()
 
 
 def even():
@@ -14,7 +10,8 @@ def even():
 
 
 def prime():
-    name = welcome_user()[1]
+    print("Welcome to the Brain Games!")
+    name = welcome_user()
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     good_result = 0
     while True:

@@ -1,10 +1,6 @@
 from brain_games.cli import welcome_user
-from brain_games.scripts.brain_games import main
 from random import randint
 import random
-
-
-main()
 
 
 def arithmetic():
@@ -22,7 +18,8 @@ def arithmetic():
 
 
 def rand_calc():
-    name = welcome_user()[1]
+    print('Welcome to the Brain Games!')
+    name = welcome_user()
     print('What is the result of the expression?')
     good_result = 0
     i = 0

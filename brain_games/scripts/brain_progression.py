@@ -1,13 +1,10 @@
 from random import randint
 from brain_games.cli import welcome_user
-from brain_games.scripts.brain_games import main
-
-
-main()
 
 
 def progression():
-    name = welcome_user()[1]
+    print("Welcome to the Brain Games!")
+    name = welcome_user()
     print('What number is missing in the progression?')
     good_result = 0
     while True:
