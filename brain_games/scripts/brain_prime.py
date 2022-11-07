@@ -3,10 +3,17 @@ from brain_games.cli import welcome_user
 
 
 def even():
+    prime = 0
     result = randint(1, 10)
     print(f'Question: {result}')
     text = input('Your answer: ').lower()
-    return text, result
+    if ((result > 1)
+            and (result % 2 != 0 or result == 2)
+            and (result % 3 != 0 or result == 3)):
+        prime += result
+        return text, result, prime
+    else:
+        return text, result, prime
 
 
 def prime():
@@ -15,21 +22,21 @@ def prime():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     good_result = 0
     while True:
-        text, result = even()
-        if (result < 10 and text == 'yes'
-                or result > 10 and text == 'no'):
+        text, result, prime = even()
+        if (result == prime and text == 'yes'
+                or result != prime and text == 'no'):
             good_result += 1
             print('Correct!')
             if good_result == 3:
                 return print(f'Congratulations, {name}')
         else:
             text2 = ''
-            if result <= 9:
+            if result == prime:
                 text2 += 'yes'
-            elif result >= 10:
+            elif result != prime:
                 text2 += 'no'
             return print(
-                f'\'{text}\' is wrong answer ;(. Correct answer was'
+                f'\'{text}\' is wrong answer ;(. Correct answer was '
                 f'\'{text2}\'.\nLet\'s try again, {name}!')
 
 
