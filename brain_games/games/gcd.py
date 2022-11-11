@@ -1,9 +1,9 @@
 import math
 from random import randint
-GAME_TASK = 'Find the greatest common divisor of given numbers.'
+RULE = 'Find the greatest common divisor of given numbers.'
 
 
-def game_math():
+def generate_data():
     num1 = randint(1, 50)
     num2 = randint(1, 50)
     question = f'{num1} {num2}'

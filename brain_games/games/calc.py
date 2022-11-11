@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 from random import randint
 import random
-GAME_TASK = 'What is the result of the expression?'
+RULE = 'What is the result of the expression?'
 
 
-def game_math():
+def generate_data():
     operators = ['-', '+', '*']
     num1 = randint(1, 10)
     num2 = randint(1, 10)

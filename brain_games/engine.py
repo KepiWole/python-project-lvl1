@@ -2,11 +2,13 @@ from brain_games.cli import welcome_user
 import prompt
 
 
-def first_word(game):
+def play_game(game):
+    print('Welcome to the Brain Games!')
     name = welcome_user()
-    print(game.GAME_TASK)
-    for x in range(3):
-        question, right_answer = game.game_math()
+    print(game.RULE)
+    attempts = 3
+    for _ in range(attempts):
+        question, right_answer = game.generate_data()
         print(f"Question: {question}")
         answer = prompt.string('Your answer: ')
         if right_answer == str(answer):
@@ -15,6 +17,7 @@ def first_word(game):
             print(
                 f'\"{answer}\" is wrong answer ;(.'
                 f' Correct answer was "{right_answer}".')
-            return print(f"Let's try again, {name}!")
+            print(f"Let's try again, {name}!")
+            break
     else:
-        return print(f'Congratulations, {name}!')
+        print(f'Congratulations, {name}!')

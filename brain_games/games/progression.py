@@ -1,8 +1,8 @@
 from random import randint
-GAME_TASK = 'What number is missing in the progression?'
+RULE = 'What number is missing in the progression?'
 
 
-def game_math():
+def generate_data():
     stop = randint(50, 100)
     step = randint(1, 5)
     result = list(range(randint(0, 9), stop, step))[: 5]

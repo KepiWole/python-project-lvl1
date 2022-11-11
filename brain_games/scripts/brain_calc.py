@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.games.first_words import first_word
+from brain_games.engine import play_game
 from brain_games.games import calc
 
 
 def main():
-    first_word(calc)
+    play_game(calc)
 
 
 if __name__ == '__main__':

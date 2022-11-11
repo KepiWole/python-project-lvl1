@@ -1,5 +1,5 @@
 from random import randint
-GAME_TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(question):
@@ -9,7 +9,7 @@ def is_prime(question):
     return True
 
 
-def game_math():
+def generate_data():
     question = randint(2, 15)
     if is_prime(question):
         right_answer = 'yes'
