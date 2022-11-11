@@ -5,16 +5,16 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/1dda31fa6421f5e666e6/maintainability)](https://codeclimate.com/github/KepiWole/python-project-lvl1/maintainability)
 
 ### asciinema brain-even
-[![asciicast](https://asciinema.org/a/SvPBV4R3NnkTdzp2Pfpyc0AxJ.svg)](https://asciinema.org/a/SvPBV4R3NnkTdzp2Pfpyc0AxJ)
+[![asciicast](https://asciinema.org/a/SvPBV4R3NnkTdzp2Pfpyc0AxJ.png)](https://asciinema.org/a/SvPBV4R3NnkTdzp2Pfpyc0AxJ)
 
 ### asciinema brain-calc
- [![asciicast](https://asciinema.org/a/0mKpoSjxm8SOoRvovzxDd2sLC.svg)](https://asciinema.org/a/0mKpoSjxm8SOoRvovzxDd2sLC)
+ [![asciicast](https://asciinema.org/a/0mKpoSjxm8SOoRvovzxDd2sLC.png)](https://asciinema.org/a/0mKpoSjxm8SOoRvovzxDd2sLC)
 
 ### asciinema brain-gcd
-[![asciicast](https://asciinema.org/a/8N1WrqyHOTy97ZD0TZQba4Jvk.svg)](https://asciinema.org/a/8N1WrqyHOTy97ZD0TZQba4Jvk)
+[![asciicast](https://asciinema.org/a/8N1WrqyHOTy97ZD0TZQba4Jvk.png)](https://asciinema.org/a/8N1WrqyHOTy97ZD0TZQba4Jvk)
 
 ### asciinema brain_progression
-[![asciicast](https://asciinema.org/a/HASp3npmmJLWmg95b7D1BiMDt.svg)](https://asciinema.org/a/HASp3npmmJLWmg95b7D1BiMDt)
+[![asciicast](https://asciinema.org/a/HASp3npmmJLWmg95b7D1BiMDt.png)](https://asciinema.org/a/HASp3npmmJLWmg95b7D1BiMDt)
 
 ### asciinema brain_prime
-[![asciicast](https://asciinema.org/a/X6pgG5Rymcdl6fiJfKBPz0ROp.svg)](https://asciinema.org/a/X6pgG5Rymcdl6fiJfKBPz0ROp)
+[![asciicast](https://asciinema.org/a/X6pgG5Rymcdl6fiJfKBPz0ROp.png)](https://asciinema.org/a/X6pgG5Rymcdl6fiJfKBPz0ROp)
