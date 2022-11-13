@@ -1,17 +1,19 @@
 from random import randint
+import math
 RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def is_prime(question):
-    for i in range(2, int(question / 2 + 1)):
-        if question % i == 0:
+def is_prime(number):
+    for i in range(2, int(math.sqrt(number) + 1)):
+        if number % i == 0:
             return False
     return True
 
 
 def generate_data():
     question = randint(2, 15)
-    if is_prime(question):
+    number = question
+    if is_prime(number):
         right_answer = 'yes'
     else:
         right_answer = 'no'

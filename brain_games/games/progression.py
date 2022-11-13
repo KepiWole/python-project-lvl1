@@ -9,6 +9,5 @@ def generate_data():
     random_index = randint(0, len(result) - 1)
     right_answer = result[random_index]
     result[random_index] = '..'
-    line_row = " ".join(map(str, (result)))
-    question = line_row
+    question = " ".join(map(str, (result)))
     return question, str(right_answer)

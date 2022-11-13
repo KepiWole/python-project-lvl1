@@ -1,17 +1,17 @@
 from brain_games.cli import welcome_user
 import prompt
+attempts = 3
 
 
-def play_game(game):
+def play(game):
     print('Welcome to the Brain Games!')
     name = welcome_user()
     print(game.RULE)
-    attempts = 3
     for _ in range(attempts):
         question, right_answer = game.generate_data()
         print(f"Question: {question}")
         answer = prompt.string('Your answer: ')
-        if right_answer == str(answer):
+        if right_answer == answer:
             print('Correct!')
         else:
             print(
